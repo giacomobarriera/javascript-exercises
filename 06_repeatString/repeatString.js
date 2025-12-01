@@ -2,13 +2,17 @@ const repeatString = function(string, num) {
    
     let arr = [];
 
-    for (let i = 0; i < num; i++) {
+    if (num < 0) {
+        return "ERROR";
+    } else {
+        for (let i = 0; i < num; i++) {
         arr.push(string);
+        }
+
+        let arrString = arr.join()
+
+        return arrString.replaceAll(",", "")
     }
-
-    let arrString = arr.join()
-
-    return arrString.replaceAll(",", "")
 }
 
 repeatString("hey", 3);
