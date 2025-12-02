@@ -1,7 +1,6 @@
-const removeFromArray = function(arr, ...obj) {
+const removeFromArray = function(arr, ...series) {
       
-    
-    let index = arr.concat([], obj)
+    let index = arr.concat([], series)
 
         return index;
 };
