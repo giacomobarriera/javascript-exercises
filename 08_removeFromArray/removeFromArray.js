@@ -1,9 +1,9 @@
-const removeFromArray = function(arr, obj) {
-        let index = arr.indexOf(obj)
+const removeFromArray = function(arr, ...obj) {
+      
+    
+    let index = arr.concat([], obj)
 
-        arr.splice(index, 1)
-
-        return arr;
+        return index;
 };
  
 // Do not edit below this line
