@@ -10,12 +10,11 @@ const sumAll = function(a, b) {
         newArr.push(i);
     }
 //somma tutti gli elementi
-    return newArr;;
+    return newArr.reduce((sum, currItem) => {
+        return sum + currItem;
+    }, 1);
 
 //per ogni numero somma gli elementi
-
-
-
 
 };
 
