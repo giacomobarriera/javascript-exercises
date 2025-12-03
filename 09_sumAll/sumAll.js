@@ -9,7 +9,17 @@ const sumAll = function(a, b) {
 if (a < 0 || b < 0) {
 // segnala ERRORE
     return "ERROR"
-// se a o b sono positivi
+// se a o b non sono numeri
+} else if ((typeof a != "number")
+         ||(typeof b != "number")){
+//segnala ERRORE
+    return "ERROR"
+// se a o b sono numeri decimali
+} else if ((a != Math.floor(a))
+        ||(b != Math.floor(b))){
+//segnala ERRORE
+    return "ERROR";
+//negli altri casi    
 } else { 
 //se a più grande di b
     if (a > b) {
