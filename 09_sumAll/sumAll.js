@@ -5,14 +5,14 @@ const sumAll = function(a, b) {
     let newArr = []
 //comincia un loop al contrario
 //usa a e b come max e min
-    for (let i = b; i > a; i--) {
+    for (let i = b; i >= a; i--) {
 //spingi l'indice del loop nel newArr
         newArr.push(i);
     }
 //somma tutti gli elementi
     return newArr.reduce((sum, currItem) => {
         return sum + currItem;
-    }, 1);
+    });
 
 //per ogni numero somma gli elementi
 
